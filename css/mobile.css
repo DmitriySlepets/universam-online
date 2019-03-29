@@ -1,0 +1,8 @@
+@media (max-width: 1100px){
+    #secondary{display:none  !important;}
+    #primary{width:100% !important;}
+    .yandexDirect{margin-left: 0;width: 100%;}
+    .seo-text{margin-left: 0;}
+    .adversting{margin-left: 0;}
+    .breadcrumbs-top{margin-left:0 !important;}
+}
