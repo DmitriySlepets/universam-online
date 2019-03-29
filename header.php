@@ -80,6 +80,21 @@
     <script type="text/javascript" async src="https://scripts.witstroom.com/check/231"></script>
 	<meta name="yandex-verification" content="2669e8c2cd6a4531" />
 	<meta name="verify-admitad" content="bd71357b09" />
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(53038231, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/53038231" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 </head>
 
 <body <?php body_class(); ?>>
@@ -107,9 +122,9 @@
 			<!--decktop header start-->
 			<img id="logo_click" src="http://universam-online.ru/images/logo.png" style="height: 104px;position: absolute;z-index: 100;cursor:pointer;"/>
 			<!--fast href start-->
-			<a class="kk_header_left1" href="/usloviya-zakaza/" style="color: #1e73be;position: absolute;left: 184px;top: 5px;z-index: 100;">Условия</a>
+			<!--<a class="kk_header_left1" href="/usloviya-zakaza/" style="color: #1e73be;position: absolute;left: 184px;top: 5px;z-index: 100;">Условия</a>
 			<a class="kk_header_left2" href="/kontakty/"       style="color: #1e73be;position: absolute;left: 270px;top: 5px;z-index: 100;">Контакты</a>
-			<a class="kk_header_left3" href="/not_paid/"       style="color: #1e73be;position: absolute;left: 360px;top: 5px;z-index: 100;">Экономия 100%</a>
+			<a class="kk_header_left3" href="/not_paid/"       style="color: #1e73be;position: absolute;left: 360px;top: 5px;z-index: 100;">Экономия 100%</a>-->
 			<!--fast href end-->
 			<?php
 			if (!$user_ID):?> 
