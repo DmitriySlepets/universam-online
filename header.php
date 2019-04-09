@@ -121,39 +121,19 @@
 		<div class="col-full">
 			<!--decktop header start-->
 			<img id="logo_click" src="http://universam-online.ru/images/logo.png" style="height: 104px;position: absolute;z-index: 100;cursor:pointer;"/>
-			<!--fast href start-->
-			<!--<a class="kk_header_left1" href="/usloviya-zakaza/" style="color: #1e73be;position: absolute;left: 184px;top: 5px;z-index: 100;">Условия</a>
-			<a class="kk_header_left2" href="/kontakty/"       style="color: #1e73be;position: absolute;left: 270px;top: 5px;z-index: 100;">Контакты</a>
-			<a class="kk_header_left3" href="/not_paid/"       style="color: #1e73be;position: absolute;left: 360px;top: 5px;z-index: 100;">Экономия 100%</a>-->
-			<!--fast href end-->
-			<?php
-			if (!$user_ID):?> 
-				<div id="right_header_href" style="z-index: 100;position: absolute;right: 60px;">
-					<a href="/my_account/"><strong class="kk_right">Личный кабинет</strong></a>
-					<div style="display: block;margin-top: 5px;margin-left: 15px;">
-						<a href="https://www.facebook.com/366707910507832"><img style="float: left; margin-right: 10px;" src="/images/icons/fb.png" width="20" height="20"></a>
-						<a href="https://vk.com/universamonline"><img style="float: left; margin-right: 10px;" src="/images/icons/vk.png" width="20" height="20"></a>
-						<a href="https://ok.ru/universamonline?st._aid=ExternalGroupWidget_OpenGroup"><img style="" src="/images/icons/ok.png" width="20" height="20"></a>
-					</div>
-				</div>
-			<?php
-			else:
-			?>
-				<div id="right_header_href" style="z-index: 100;position: absolute;right: 60px;">
-					<div style="display:inline-block;vertical-align:top;margin-right: 20px;">
-						<a style="margin-bottom: 5px;display: block;margin-top: 5px;" href="https://www.facebook.com/366707910507832"><img src="/images/icons/fb.png" width="20" height="20"></a>
-						<a style="margin-bottom: 5px;display: block;" href="https://vk.com/universamonline"><img src="/images/icons/vk.png" width="20" height="20"></a>
-						<a href="https://ok.ru/universamonline?st._aid=ExternalGroupWidget_OpenGroup"><img src="/images/icons/ok.png" width="20" height="20"></a>
-					</div>
-					<div style="display:inline-block;vertical-align:top;">
-						<a href="/my_account/information/" class="kk_href_lk0">Счет: <?php echo $amount_score; ?> руб.</a></br>
-						<a href="/my_account/information/" class="kk_href_lk0">Кошелек: <?php echo $amount_purse; ?> руб.</a></br>
-						<a href="/my_account/information/" class="kk_href_lk"><?php _e(' '); ?><strong class="kk_right"><?php echo $current_user->display_name; ?></strong></a>
-					</div>
-				</div>
-			<?php
-			endif;
-			?>
+            <!--fast href start-->
+            <a class="kk_header_left1" href="/usloviya-zakaza/" style="color: #1e73be;position: absolute;left: 184px;top: 5px;z-index: 100;">Условия</a>
+            <a class="kk_header_left2" href="/kontakty/" style="color: #1e73be;position: absolute;left: 270px;top: 5px;z-index: 100;">Контакты</a>
+            <a class="kk_header_left3" href="/not_paid/" style="color: #1e73be;position: absolute;left: 360px;top: 5px;z-index: 100;">Экономия 100%</a>
+
+            <div id="right_header_href" style="z-index: 100;position: absolute;right: 60px;">
+                <div style="display: block;margin-top: 5px;margin-left: 15px;min-width: 82px;">
+                    <a href="https://www.facebook.com/366707910507832"><img style="float: left; margin-right: 10px;" src="/images/icons/fb.png" width="20" height="20"></a>
+                    <a href="https://vk.com/universamonline"><img style="float: left; margin-right: 10px;" src="/images/icons/vk.png" width="20" height="20"></a>
+                    <a href="https://ok.ru/universamonline?st._aid=ExternalGroupWidget_OpenGroup"><img style="" src="/images/icons/ok.png" width="20" height="20"></a>
+                </div>
+            </div>
+
 			<!--decktop header end-->
 			
 			<!--new menu start-->
@@ -183,46 +163,6 @@
 				
 			<!--mobile header start-->
 			<div class="kk_mobile_search"><a href="/search/"><img src="/images/mobile/lupa.png" /></a></div>
-			<?php
-			//calculate position true
-			$total_true = 0;
-			foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
-				$_product   = apply_filters( 'woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key );
-						
-				$have_pod_zakak = false;
-				$kk_attributes = $_product->get_attributes();
-				foreach ( $kk_attributes as $kk_attribute ) {
-					if($kk_attribute['data']['name']=="Под заказ"){
-						if($kk_attribute['data']['value']=="Да") $have_pod_zakak = true;
-					}
-				}
-				if($have_pod_zakak==true){
-					continue;
-				}			
-							
-				$real_ost = $_product->stock_quantity - 1000000;
-				if($real_ost<=0){
-					continue;
-				}	
-				$quantity_cart = $cart_item['quantity']; 
-				$price_cart    = get_post_meta($cart_item['product_id'] , '_price', true);
-				$total_true = $total_true + $quantity_cart*$price_cart;
-				
-				if($total_true>=1000){
-					$total_true_new = intval($total_true/1000);
-					$total_true_string = $total_true_new . 'К';
-				}else{
-					$total_true_string = $total_true;
-				}
-			}			
-			?>
-			<div class="kk_mobile_basket"><a href="/zakaz/"><img src="/images/mobile/basket.png" /><?php echo $total_true_string . ' р.'; ?></a></div>
-			<?php
-			if (!$user_ID){}else{?> 
-			<div class="kk_mobile_schet">
-				<a href="/my_account/information/" data-tooltip="Счет / Кошелек"><img src="/images/mobile/money.png" /><?php echo $m_amount_score; ?> / <?php echo $m_amount_purse; ?></a>			
-			</div>
-			<?php } ?>
 			<!--mobile header end-->
 			
 			<?php

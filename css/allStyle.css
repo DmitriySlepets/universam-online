@@ -312,7 +312,7 @@ table.cart .product-thumbnail img{margin: 0 auto !important; max-width: 40px !im
 #order_review table thead th {font-size: 12px;}
 #order_review #e_deliverydate_field label{padding-left: 1.41575em;}
 #order_review #place_order{background-color: #1e73be;border-color: #1e73be;color: #ffffff;width: 300px;font-size: 1em;padding: .6180469716em;}
-.checkout.woocommerce-checkout #customer_details{display:none};
+.checkout.woocommerce-checkout #customer_details{display:none;}
 /*orders-page-end*/
 
 /*новый футер - начало*/
@@ -345,6 +345,19 @@ table.cart .product-thumbnail img{margin: 0 auto !important; max-width: 40px !im
 #google_pedestal_container{display: none;}
 /*yandex-google-direct-end*/
 
+
+/*search-main-start*/
+#main_page #search_main{width: 80%; margin: 0 auto; margin-top: 80px;}
+#main_page #search_main #searchform{width: 100%; text-align: center;}
+#main_page #search_main #searchform>div{position: relative;}
+#main_page #search_main #searchform #s{height: 50px; width: 100%;border-radius: 5px 5px;border: 2px solid #1e73be; background: none;padding-left: 20px;}
+#main_page #search_main #searchform #searchsubmit{height: 36px; position: absolute; right: 6px; top: 7px; width: 120px; border-radius: 5px 5px; border: 2px solid #1e73be; background: none; box-shadow: none; color: red;}
+#main_page #search_main #searchform #searchsubmit:hover{background: #1e73be; color:#fff;}
+#main_page #search_main #searchform #s::-moz-placeholder {font-weight: bold;}
+#main_page #search_main #searchform #s::-webkit-input-placeholder {font-weight: bold;}
+#main_page #search_main #searchform #s:-ms-input-placeholder {font-weight: bold;}
+#main_page #search_main #searchform #s::placeholder {font-weight: bold;}
+/*search-main-end*/
 
 
 

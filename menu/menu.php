@@ -72,24 +72,6 @@
 		<a style="display:inline-block;width: 48%;height:40px;line-height:39px;vertical-align:top;text-align:center;border-left: 1px solid grey;" href="/registration/">Регистрация</a>
 	<?php
   	else:
-	?>
-	<?php
-		//текущее состояние счета
-		$server_bd = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD) or die('No connect to Server');
-		mysqli_select_db($server_bd, DB_NAME) or die('No connect to DB');
-		mysqli_set_charset($server_bd,"utf8");
-
-		$id_user = get_current_user_id();
-		$query_select = "SELECT ID_score,Amount_score FROM kk_score_users WHERE ID_user = $id_user";
-		$res_query    = mysqli_query($server_bd, $query_select) or die(mysqli_error($server_bd));
-		$row_query    = mysqli_fetch_row($res_query);
-		$amount_score = $row_query[1];
-			
-		mysqli_close($server_bd);
-	?>
-		<a style="display:inline-block;width:148px;height:40px;line-height:39px;vertical-align:top;text-align:center;border-right: 1px solid grey;" href="/my_account/information/">Счет: <?php echo $amount_score; ?> руб.</a>
-		<a style="display:inline-block;width:148px;height:40px;line-height:39px;vertical-align:top;text-align:center;border-left: 1px solid grey;" href="/my_account/information/"><?php echo $current_user->display_name; ?></a>
-	<?php
   	endif;
 	?>	
 	<div style="border-bottom:1px solid grey;width:100%;"></div>
