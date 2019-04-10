@@ -357,6 +357,12 @@ table.cart .product-thumbnail img{margin: 0 auto !important; max-width: 40px !im
 #main_page #search_main #searchform #s::-webkit-input-placeholder {font-weight: bold;}
 #main_page #search_main #searchform #s:-ms-input-placeholder {font-weight: bold;}
 #main_page #search_main #searchform #s::placeholder {font-weight: bold;}
+@media (max-width: 940px){
+	#main_page #search_main #searchform #s::-moz-placeholder {font-weight: bold;font-size: 10px;}
+	#main_page #search_main #searchform #s::-webkit-input-placeholder {font-weight: bold;font-size: 10px;}
+	#main_page #search_main #searchform #s:-ms-input-placeholder {font-weight: bold;font-size: 10px;}
+	#main_page #search_main #searchform #s::placeholder {font-weight: bold;font-size: 10px;}
+}
 /*search-main-end*/
 
 

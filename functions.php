@@ -1803,4 +1803,19 @@ function devisesearchform()
 }
 add_shortcode('devisesearch', 'devisesearchform');
 
+function devisesearchformmobile()
+{
+    $total =  wp_count_posts('product')->publish;
+
+    $form = '<form role="search" method="get" id="searchform" action="' . home_url('/') . '" >
+    <div>
+    <input type="text" placeholder="поиск среди '.$total.' товаров" value="' . get_search_query() . '" name="s" id="s" /><input type="submit" id="searchsubmit" value="' . esc_attr__('Поиск') . '" />
+    <input type="hidden" name="post_type" value="product" />
+    <input type="hidden" name="dgwt_wcas" value="1" />
+    </div>
+    </form>';
+    return $form;
+}
+add_shortcode('devisesearchmobile', 'devisesearchformmobile');
+
 ?>
