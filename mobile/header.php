@@ -153,26 +153,205 @@
     <div class="products-collection sticky-middle-place">
         <div class="card">
             <a href="#" class="header">
-                <div class="banner"></div>
-                <div class="info"></div>
+                <div class="banner" style="background-image:url(/wp-content/themes/storefront/images/mobile/1080x316_polka_app.png);"></div>
+                <div class="info">
+                    <div class="text-wrapper">
+                        <div class="title">Товары со скидками</div>
+                    </div>
+                </div>
             </a>
             <div class="products">
                 <a href="#" class="product">
-                    <div class="image"></div>
-                    <div class="price-block"></div>
+                    <div class="image">
+                        <div class="image_wrapper">
+                            <div class="container">
+                                <img src="/wp-content/themes/storefront/images/mobile/1026786923.jpg" class="img img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-block">
+                        <span class="price red" style="font-size:14px;">
+                            <span class="price-number">
+                                <span class="main">399</span>
+                            </span>
+                            <span class="currency">₽</span>
+                        </span>
+                        <span class="price price old linethrough" style="font-size:12px;">
+                            <span class="price-number">
+                                <span class="main">980</span>
+                            </span>
+                            <span class="currency">₽</span>
+                        </span>
+                    </div>
                 </a>
                 <a href="#" class="product">
-                    <div class="image"></div>
-                    <div class="price-block"></div>
+                    <div class="image">
+                        <div class="image_wrapper">
+                            <div class="container">
+                                <img src="/wp-content/themes/storefront/images/mobile/1026786923.jpg" class="img img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-block">
+                        <span class="price red" style="font-size:14px;">
+                            <span class="price-number">
+                                <span class="main">399</span>
+                            </span>
+                            <span class="currency">₽</span>
+                        </span>
+                        <span class="price price old linethrough" style="font-size:12px;">
+                            <span class="price-number">
+                                <span class="main">980</span>
+                            </span>
+                            <span class="currency">₽</span>
+                        </span>
+                    </div>
                 </a>
                 <a href="#" class="product">
-                    <div class="image"></div>
-                    <div class="price-block"></div>
+                    <div class="image">
+                        <div class="image_wrapper">
+                            <div class="container">
+                                <img src="/wp-content/themes/storefront/images/mobile/1026786923.jpg" class="img img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-block">
+                        <span class="price red" style="font-size:14px;">
+                            <span class="price-number">
+                                <span class="main">399</span>
+                            </span>
+                            <span class="currency">₽</span>
+                        </span>
+                        <span class="price price old linethrough" style="font-size:12px;">
+                            <span class="price-number">
+                                <span class="main">980</span>
+                            </span>
+                            <span class="currency">₽</span>
+                        </span>
+                    </div>
                 </a>
                 <a href="#" class="product">
-                    <div class="image"></div>
-                    <div class="price-block"></div>
+                    <div class="image">
+                        <div class="image_wrapper">
+                            <div class="container">
+                                <img src="/wp-content/themes/storefront/images/mobile/1026786923.jpg" class="img img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-block">
+                        <span class="price red" style="font-size:14px;">
+                            <span class="price-number">
+                                <span class="main">399</span>
+                            </span>
+                            <span class="currency">₽</span>
+                        </span>
+                        <span class="price price old linethrough" style="font-size:12px;">
+                            <span class="price-number">
+                                <span class="main">980</span>
+                            </span>
+                            <span class="currency">₽</span>
+                        </span>
+                    </div>
                 </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="uWidgetSKU sticky-middle-place">
+        <div class="wrapper header">
+            <a href="/highlight/21513/" class="link title">
+                Популярные категории
+            </a>
+        </div>
+        <div class="wrapper grid2">
+            <div class="line">
+                <div class="tile_wrapper">
+                    <a href="#" class="tile">
+                        <div class="image-wrap">
+                            <div class="image is-faded">
+                                <div class="image_wrapper">
+                                    <div class="container">
+                                        <img src="/wp-content/themes/storefront/images/mobile/1019886047.jpg" class="img img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-block">
+                            <span class="price price-final" style="font-size:14px;">
+                                <span class="price-number">
+                                    <span class="main">от 1&nbsp;386</span>
+                                </span>
+                                <span class="currency">₽</span>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="tile_wrapper">
+                    <a href="#" class="tile">
+                        <div class="image-wrap">
+                            <div class="image is-faded">
+                                <div class="image_wrapper">
+                                    <div class="container">
+                                        <img src="/wp-content/themes/storefront/images/mobile/1027274166.jpg" class="img img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="discount-block">−&nbsp;40%</div>
+                        </div>
+                        <div class="price-block block-sale">
+                            <span class="price price-final" style="font-size:14px;">
+                                <span class="price-number">
+                                    <span class="main">от 2&nbsp;344</span>
+                                </span>
+                                <span class="currency">₽</span>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="tile_wrapper">
+                    <a href="#" class="tile">
+                        <div class="image-wrap">
+                            <div class="image is-faded">
+                                <div class="image_wrapper">
+                                    <div class="container">
+                                        <img src="/wp-content/themes/storefront/images/mobile/1026268225.jpg" class="img img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="discount-block">−&nbsp;15%</div>
+                        </div>
+                        <div class="price-block block-sale">
+                            <span class="price price-final" style="font-size:14px;">
+                                <span class="price-number">
+                                    <span class="main">от 1&nbsp;691</span>
+                                </span>
+                                <span class="currency">₽</span>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="tile_wrapper">
+                    <a href="#" class="tile">
+                        <div class="image-wrap">
+                            <div class="image is-faded">
+                                <div class="image_wrapper">
+                                    <div class="container">
+                                        <img src="/wp-content/themes/storefront/images/mobile/1026542106.jpg" class="img img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="discount-block">−&nbsp;10%</div>
+                        </div>
+                        <div class="price-block block-sale">
+                            <span class="price price-final" style="font-size:14px;">
+                                <span class="price-number">
+                                    <span class="main">от 1&nbsp;485</span>
+                                </span>
+                                <span class="currency">₽</span>
+                            </span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
